@@ -62,7 +62,7 @@ class Tiler(BaseHTTPRequestHandler):
 				elif url.path.endswith('.png'):
 					self.send_header('Content-type', 'image/png')
 				elif url.path.endswith('.jpg'):
-					self.send_header('Content-type', 'image/jepg')
+					self.send_header('Content-type', 'image/jpeg')
 				self.end_headers()
 				self.wfile.write(f.read())
 				f.close()
